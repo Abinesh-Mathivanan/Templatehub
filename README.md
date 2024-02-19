@@ -1,7 +1,6 @@
 # Templatehub
 
-![Templatehub Interface](<img width="960" alt="th" src="https://github.com/Abinesh-Mathivanan/Templatehub/assets/113496287/9488ebb5-f649-4e8f-8a65-3338cff034e7">
-)
+[Templatehub Interface](<img width="960" alt="th" src="https://github.com/Abinesh-Mathivanan/Templatehub/assets/113496287/9488ebb5-f649-4e8f-8a65-3338cff034e7">)
 
 Templatehub is a platform that hosts meme templates from movies for free. It provides a curated collection of meme templates for users to explore and use in their creative endeavors.
 
