@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/thico.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/uikit.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.7/css/uikit.min.css" />
+    <script src="assets/js/uikit.js"></script>
+    <script src="assets/js/uikit-icons.js"></script>
+    <title>Template hub</title>
+</head>
+<body class="scroll-container shiny">
+<!-- Navigation Bar -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right navbar-container" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+
+    <div class="uk-navbar-left">
+        <img src="assets/img/templatehublogo.png" alt="Logo" width="250" height="250" style="padding-top: 10px;">
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav">
+            <li><a href="copyright.html" class="copyright" style="font-family: Arial, Helvetica, sans-serif; font-size: small;">Copyright</a></li>
+            <!-- <li><a class="uk-button-text uk-text-capitalize" href="#blogs" uk-scroll>Blog</a></li> -->
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+
+    <div class="uk-navbar-left">
+        <img src="assets/img/templatehublogo.png" alt="Logo" height="200px" width="200px">
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a class="copyright" href="copyright.html">Copyright</a></li>
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<input type="file" id="file-input" webkitdirectory directory multiple style="display: none;">
+<div class="search-container">
+    <div class="search-box">
+        <form id="search-form">
+            <input class="input" type="text" id="search-box" placeholder="Search by Name / Movie / Category">
+            <button class="button">Search</button>
+        </form>
+    </div>
+    <div class="label-box">
+        <h2 class="trending-heading">Trending tags</h2>
+        <button class="tags" data-label="american-jokes" onclick="searchByLabel('american-jokes')"> dank memes</button>
+        <button class="tags" data-label="american-jokes" onclick="searchByLabel('american-jokes')"> schizophernic</button>
+        <button class="tags" data-label="american-jokes" onclick="searchByLabel('american-jokes')"> american jokes</button>
+        <button class="tags" data-label="japanese-jokes" onclick="searchByLabel('ajith')"> japanese jokes </button>
+        <button class="tags" data-label="germany" onclick="searchByLabel('suriya')"> internet </button>
+        <button class="tags" data-label="andrew-tate" onclick="searchByLabel('simbu')"> tech </button>
+        <button class="tags" data-label="niggaz" onclick="searchByLabel('simbu')"> anime </button>
+        <ul id="label-list"></ul>
+    </div>
+</div>
+
+
+
+<div class="return-result" id="search-result"></div>
+
+
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 id="" class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">
+        <span id="binaryText">01011010011001110010111</span><br>
+        <span id="revert">10110101001011011101010011101111010</span>
+        <span id="final">101001011101100110100</span>
+    </h1>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+
+
+</section> -->
+
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const navbar = document.querySelector('.navbar-container');
+
+        window.onscroll = function() {
+            const currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                // up
+                navbar.style.transform = 'translateY(0)';
+            } else {
+                // down
+                navbar.style.transform = 'translateY(-100%)';
+            }
+
+            prevScrollPos = currentScrollPos;
+        };
+
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</body>
+
+</html>
