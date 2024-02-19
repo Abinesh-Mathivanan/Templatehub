@@ -1,0 +1,6 @@
+[
+    { "labels": ["john","bob"], "imagePath": "assets/img/b.png" },
+    { "labels": ["jane","bob"], "imagePath": "path/to/your/images/jane.jpg" },
+    { "labels": ["bob","jane"], "imagePath": "path/to/your/images/bob.jpg" }
+
+]
